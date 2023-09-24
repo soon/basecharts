@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  basecharts:
+    container_name: basecharts
+    image: basecharts
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      BASEROW_PUBLIC_URL: http://localhost
+    volumes:
+      - baserow_data:/baserow/data
+volumes:
+  baserow_data:

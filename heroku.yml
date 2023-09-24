@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: heroku.Dockerfile
+release:
+  image: web
+  command:
+    - ./baserow.sh backend-cmd manage migrate
+run:
+  web: ./baserow.sh start

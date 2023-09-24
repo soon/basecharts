@@ -1,0 +1,12 @@
+{
+  "name": "Baserow Charts",
+  "version": "0.0.1",
+  "supported_baserow_versions": "1.20.2",
+  "plugin_api_version": "0.0.1-alpha",
+  "description": "TODO",
+  "author": "TODO",
+  "author_url": "TODO",
+  "url": "TODO",
+  "license": "TODO",
+  "contact": "TODO"
+}
