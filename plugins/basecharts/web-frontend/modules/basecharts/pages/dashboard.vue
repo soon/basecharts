@@ -36,6 +36,8 @@ import PieChart from '../components/charts/pie/PieChart.vue'
 import PieChartForm from '../components/charts/pie/PieChartForm.vue'
 import BarChart from '../components/charts/bar/BarChart.vue'
 import BarChartForm from '../components/charts/bar/BarChartForm.vue'
+import ScatterChart from '../components/charts/scatter/ScatterChart.vue'
+import ScatterChartForm from '../components/charts/scatter/ScatterChartForm.vue'
 import DashboardChartBlock from '../components/DashboardChartBlock.vue'
 import Modal from '@basecharts/components/Modal.vue'
 
@@ -58,12 +60,14 @@ export default {
         line: [LineChart, LineChartForm],
         bar: [BarChart, BarChartForm],
         pie: [PieChart, PieChartForm],
+        scatter: [ScatterChart, ScatterChartForm],
       },
       chartType: 'line',
       allChartTypes: [
         { name: 'Line', value: 'line' },
         { name: 'Bar', value: 'bar' },
         { name: 'Pie', value: 'pie' },
+        { name: 'Scatter', value: 'scatter' },
       ],
       apiUrl: '',
       apiResult: null,
@@ -133,7 +137,6 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   max-width: 1200px;
-  /* You can adjust this value */
   margin: 0 auto;
 }
 
